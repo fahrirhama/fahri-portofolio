@@ -1,0 +1,110 @@
+:root {
+  --accent: #09da86;
+  --accent-hover: #07b871;
+  --deep-blue: #1f0fcb;
+}
+
+body {
+  background:
+    linear-gradient(rgba(6, 11, 5, 0.85), rgba(6, 11, 5, 0.85)),
+    url("image/wallpaper.jpg") center/cover fixed;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+/* Navbar */
+.navbar-custom {
+  background-color: rgba(31, 15, 203, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--accent);
+}
+.navbar-custom .navbar-brand { color: #fff; }
+.navbar-custom .nav-link {
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.2s;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  background-color: var(--accent);
+  color: var(--deep-blue) !important;
+}
+
+/* Aksen */
+.text-accent { color: var(--accent) !important; }
+
+/* Tombol */
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: var(--deep-blue);
+  font-weight: 600;
+}
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+  color: var(--deep-blue);
+}
+
+/* Kartu */
+.card-custom {
+  background-color: rgba(31, 15, 203, 0.75);
+  border: 1px solid rgba(9, 218, 134, 0.3);
+  border-radius: 1rem;
+  color: #fff;
+  overflow: hidden;
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-custom:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(9, 218, 134, 0.15);
+}
+.card-custom .card-img-top {
+  border-radius: 0;
+  max-height: 220px;
+  object-fit: cover;
+}
+
+/* Hero */
+.hero-img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border: 4px solid var(--accent);
+}
+
+/* Tabel */
+.table-custom {
+  --bs-table-bg: transparent;
+  --bs-table-color: #fff;
+  --bs-table-border-color: rgba(9, 218, 134, 0.2);
+}
+.table-custom thead th {
+  background-color: var(--accent);
+  color: var(--deep-blue);
+  border-color: var(--accent);
+}
+.table-custom tbody tr { transition: background 0.2s; }
+.table-custom tbody tr:hover {
+  background-color: rgba(9, 218, 134, 0.12);
+}
+
+/* Logo sekolah */
+.sekolah-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+/* Form */
+.form-control:focus,
+.form-control:focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.25rem rgba(9, 218, 134, 0.25);
+}
